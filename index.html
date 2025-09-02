@@ -1,0 +1,268 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Nairobi Business Directory
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen font-sans">
+  <header class="bg-blue-900 text-white p-6 shadow-md">
+   <h1 class="text-3xl font-poppins font-semibold">
+    Nairobi Business Directory
+   </h1>
+  </header>
+  <section class="relative bg-blue-800 text-white">
+   <img alt="Panoramic view of Nairobi city skyline during sunset" class="w-full h-64 sm:h-96 object-cover brightness-75" height="600" src="https://storage.googleapis.com/a1aa/image/ca1c002e-d66e-43f0-5164-4cd8b0287c49.jpg" width="1920"/>
+   <div class="absolute inset-0 flex flex-col justify-center items-center px-6 text-center">
+    <h2 class="text-3xl sm:text-5xl font-poppins font-semibold mb-4 drop-shadow-lg">
+     Discover Nairobi's Best Businesses
+    </h2>
+    <p class="max-w-3xl text-lg sm:text-xl drop-shadow-md">
+     Your comprehensive directory to connect with trusted businesses across Nairobi.
+    </p>
+   </div>
+  </section>
+  <section class="max-w-6xl mx-auto px-6 py-8">
+   <h3 class="text-2xl font-semibold text-blue-900 mb-6 font-poppins text-center">
+    Browse by Categories
+   </h3>
+   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 text-center">
+    <button class="bg-white shadow-md rounded-lg p-4 hover:bg-blue-100 transition flex flex-col items-center justify-center">
+     <i class="fas fa-laptop-code text-blue-700 text-3xl mb-2">
+     </i>
+     <span class="text-blue-900 font-semibold">
+      Technology
+     </span>
+    </button>
+    <button class="bg-white shadow-md rounded-lg p-4 hover:bg-blue-100 transition flex flex-col items-center justify-center">
+     <i class="fas fa-utensils text-blue-700 text-3xl mb-2">
+     </i>
+     <span class="text-blue-900 font-semibold">
+      Food &amp; Beverage
+     </span>
+    </button>
+    <button class="bg-white shadow-md rounded-lg p-4 hover:bg-blue-100 transition flex flex-col items-center justify-center">
+     <i class="fas fa-seedling text-blue-700 text-3xl mb-2">
+     </i>
+     <span class="text-blue-900 font-semibold">
+      Landscaping
+     </span>
+    </button>
+    <button class="bg-white shadow-md rounded-lg p-4 hover:bg-blue-100 transition flex flex-col items-center justify-center">
+     <i class="fas fa-gavel text-blue-700 text-3xl mb-2">
+     </i>
+     <span class="text-blue-900 font-semibold">
+      Legal Services
+     </span>
+    </button>
+    <button class="bg-white shadow-md rounded-lg p-4 hover:bg-blue-100 transition flex flex-col items-center justify-center">
+     <i class="fas fa-dumbbell text-blue-700 text-3xl mb-2">
+     </i>
+     <span class="text-blue-900 font-semibold">
+      Fitness
+     </span>
+    </button>
+    <button class="bg-white shadow-md rounded-lg p-4 hover:bg-blue-100 transition flex flex-col items-center justify-center">
+     <i class="fas fa-school text-blue-700 text-3xl mb-2">
+     </i>
+     <span class="text-blue-900 font-semibold">
+      Education
+     </span>
+    </button>
+   </div>
+  </section>
+  <main class="max-w-6xl mx-auto p-6">
+   <section class="mb-8">
+    <input aria-label="Search businesses" class="w-full max-w-md p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-600" id="searchInput" placeholder="Search businesses..." type="search"/>
+   </section>
+   <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="businessList">
+    <!-- Business cards will be inserted here by JS -->
+   </section>
+  </main>
+  <section class="max-w-6xl mx-auto px-6 py-12">
+   <h3 class="text-2xl font-semibold text-blue-900 mb-8 font-poppins text-center">
+    Latest from Our Blog
+   </h3>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+     <img alt="Business meeting with laptops and coffee cups on table" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/2e416cd0-f13c-4293-13af-644f33a46eda.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h4 class="text-xl font-semibold mb-2 text-blue-900">
+       How Technology is Transforming Nairobi's Business Landscape
+      </h4>
+      <p class="text-gray-700 flex-grow mb-4">
+       Explore the latest tech trends shaping the future of businesses in Nairobi and how companies are adapting.
+      </p>
+      <a class="text-blue-600 font-semibold hover:underline self-start" href="#">
+       Read More →
+      </a>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+     <img alt="Delicious food served in a modern restaurant" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/a9de6f27-6788-45c8-7cab-a2d32ed3f6dc.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h4 class="text-xl font-semibold mb-2 text-blue-900">
+       Top 5 Cafés to Visit in Nairobi for Food Lovers
+      </h4>
+      <p class="text-gray-700 flex-grow mb-4">
+       Discover the best spots in Nairobi to enjoy delicious meals and great ambiance.
+      </p>
+      <a class="text-blue-600 font-semibold hover:underline self-start" href="#">
+       Read More →
+      </a>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+     <img alt="Beautiful landscaped garden with flowers and greenery" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/e7b0048f-ca5a-4c6e-d0d2-3251e36c54f2.jpg" width="400"/>
+     <div class="p-4 flex flex-col flex-grow">
+      <h4 class="text-xl font-semibold mb-2 text-blue-900">
+       Landscaping Tips to Beautify Your Nairobi Home
+      </h4>
+      <p class="text-gray-700 flex-grow mb-4">
+       Get expert advice on creating stunning gardens and outdoor spaces in the city.
+      </p>
+      <a class="text-blue-600 font-semibold hover:underline self-start" href="#">
+       Read More →
+      </a>
+     </div>
+    </article>
+   </div>
+  </section>
+  <section class="max-w-6xl mx-auto px-6 py-12">
+   <h3 class="text-2xl font-semibold text-blue-900 mb-8 font-poppins text-center">
+    Gallery
+   </h3>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <figure class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+     <img alt="Nairobi city skyline at dusk with lights" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/90ea4530-6a45-4ee0-67bd-8cf6bdc35817.jpg" width="400"/>
+     <figcaption class="p-4 text-gray-700 text-sm">
+      Nairobi city skyline at dusk showcasing the vibrant urban life.
+     </figcaption>
+    </figure>
+    <figure class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+     <img alt="Local market with fresh fruits and vegetables" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/d075aadc-f372-4af6-ed49-a7a8c35c97de.jpg" width="400"/>
+     <figcaption class="p-4 text-gray-700 text-sm">
+      Bustling local market offering fresh fruits and vegetables.
+     </figcaption>
+    </figure>
+    <figure class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+     <img alt="Traditional Kenyan crafts displayed in a shop" class="w-full h-48 object-cover" height="250" src="https://storage.googleapis.com/a1aa/image/69aa3af8-810b-4a12-c9cf-bc5a0be0788b.jpg" width="400"/>
+     <figcaption class="p-4 text-gray-700 text-sm">
+      Traditional Kenyan crafts and handmade goods available for purchase.
+     </figcaption>
+    </figure>
+   </div>
+  </section>
+  <footer class="bg-blue-900 text-white text-center p-4 mt-12">
+   © 2024 Nairobi Business Directory. All rights reserved.
+  </footer>
+  <script>
+   const businesses = [
+      {
+        name: "Nairobi Tech Solutions",
+        category: "Technology",
+        phone: "+254 700 123 456",
+        email: "info@nairobi-tech.co.ke",
+        address: "123 Kenyatta Ave, Nairobi",
+        image: "https://placehold.co/400x250?text=Tech+Company+Office",
+        description: "Providing innovative tech solutions for businesses in Nairobi."
+      },
+      {
+        name: "Savannah Café",
+        category: "Food & Beverage",
+        phone: "+254 711 987 654",
+        email: "contact@savannahcafe.co.ke",
+        address: "45 Moi Rd, Nairobi",
+        image: "https://placehold.co/400x250?text=Cozy+Cafe+Interior",
+        description: "A cozy café offering local and international delicacies."
+      },
+      {
+        name: "Green Gardens Landscaping",
+        category: "Landscaping",
+        phone: "+254 722 555 333",
+        email: "hello@greengardens.co.ke",
+        address: "78 Riverside Dr, Nairobi",
+        image: "https://placehold.co/400x250?text=Beautiful+Garden+Design",
+        description: "Expert landscaping and garden maintenance services."
+      },
+      {
+        name: "Nairobi Legal Associates",
+        category: "Legal Services",
+        phone: "+254 733 444 222",
+        email: "law@nairobi-legal.co.ke",
+        address: "12 Westlands Rd, Nairobi",
+        image: "https://placehold.co/400x250?text=Law+Office+Building",
+        description: "Professional legal advice and representation."
+      },
+      {
+        name: "Urban Fitness Gym",
+        category: "Fitness",
+        phone: "+254 700 888 999",
+        email: "support@urbanfitness.co.ke",
+        address: "89 Ngong Rd, Nairobi",
+        image: "https://placehold.co/400x250?text=Modern+Gym+Interior",
+        description: "State-of-the-art gym facilities and personal training."
+      },
+      {
+        name: "Bright Minds Academy",
+        category: "Education",
+        phone: "+254 711 222 333",
+        email: "info@brightminds.ac.ke",
+        address: "34 Langata Rd, Nairobi",
+        image: "https://placehold.co/400x250?text=School+Building+Exterior",
+        description: "Quality education for children from kindergarten to high school."
+      }
+    ];
+
+    const businessList = document.getElementById('businessList');
+    const searchInput = document.getElementById('searchInput');
+
+    function displayBusinesses(list) {
+      businessList.innerHTML = '';
+      if (list.length === 0) {
+        businessList.innerHTML = '<p class="col-span-full text-center text-gray-500">No businesses found.</p>';
+        return;
+      }
+      list.forEach(biz => {
+        const card = document.createElement('article');
+        card.className = "bg-white rounded-lg shadow-md overflow-hidden flex flex-col";
+
+        card.innerHTML = `
+          <img src="${biz.image}" alt="Image showing ${biz.name} business premises or related" class="w-full h-48 object-cover" />
+          <div class="p-4 flex flex-col flex-grow">
+            <h2 class="text-xl font-semibold mb-1 text-blue-900">${biz.name}</h2>
+            <p class="text-sm text-gray-600 mb-2 italic">${biz.category}</p>
+            <p class="text-gray-700 flex-grow">${biz.description}</p>
+            <div class="mt-4 text-sm text-gray-800 space-y-1">
+              <p><i class="fas fa-phone-alt mr-2 text-blue-600"></i>${biz.phone}</p>
+              <p><i class="fas fa-envelope mr-2 text-blue-600"></i>${biz.email}</p>
+              <p><i class="fas fa-map-marker-alt mr-2 text-blue-600"></i>${biz.address}</p>
+            </div>
+          </div>
+        `;
+        businessList.appendChild(card);
+      });
+    }
+
+    searchInput.addEventListener('input', e => {
+      const query = e.target.value.toLowerCase();
+      const filtered = businesses.filter(biz =>
+        biz.name.toLowerCase().includes(query) ||
+        biz.category.toLowerCase().includes(query) ||
+        biz.description.toLowerCase().includes(query) ||
+        biz.address.toLowerCase().includes(query)
+      );
+      displayBusinesses(filtered);
+    });
+
+    displayBusinesses(businesses);
+  </script>
+ </body>
+</html>
